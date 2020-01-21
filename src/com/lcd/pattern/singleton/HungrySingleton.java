@@ -2,12 +2,13 @@ package com.lcd.pattern.singleton;
 
 
 import java.io.ObjectStreamException;
+import java.io.Serializable;
 
 /**
  * 单例模式-饿汉式
  * 没有线程安全问题，一开始就创建，容易产生垃圾
  */
-public class HungrySingleton {
+public class HungrySingleton implements Serializable {
     //私有化构造函数
     private HungrySingleton(){}
     //静态变量，类一加载就初始化
