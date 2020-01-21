@@ -21,7 +21,10 @@ public class SingletonMain {
                 /*Object instance = InnerClassSingleton.getInstance();
                 System.out.println(System.currentTimeMillis() +" "+ instance);*/
                 //枚举实现单例
-                Object instance = EnumSingleton.INSTANCE.hashCode();
+                /*Object instance = EnumSingleton.INSTANCE.hashCode();
+                System.out.println(System.currentTimeMillis() +" "+ instance);*/
+                //注册式实现单例
+                Object instance = RegisterSingleton.getInstance("com.lcd.pattern.model.TeLunSu");
                 System.out.println(System.currentTimeMillis() +" "+ instance);
                 try {
                     latch.await();
