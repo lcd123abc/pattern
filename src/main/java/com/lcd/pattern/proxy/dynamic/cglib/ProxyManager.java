@@ -4,6 +4,9 @@ import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
 import java.lang.reflect.Method;
 
+/**
+ * cglib定义方法拦截器
+ */
 public class ProxyManager implements MethodInterceptor {
     @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
