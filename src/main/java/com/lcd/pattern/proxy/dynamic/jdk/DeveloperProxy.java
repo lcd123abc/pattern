@@ -15,13 +15,15 @@ public class DeveloperProxy {
                 javaCoder.getClass().getInterfaces(), (proxy, method, args) -> {
                     if(method.getName().equals("deCode")){
                         System.out.println("写代码前祈祷一下");
-                        method.invoke(javaCoder,args);
+                        Object obj = method.invoke(javaCoder,args);
                         System.out.println("哇，运行居然没bug");
+                        return obj;
                     }
                     if(method.getName().equals("deBug")){
                         System.out.println("调bug前祈祷一下");
-                        method.invoke(javaCoder,args);
+                        Object obj = method.invoke(javaCoder,args);
                         System.out.println("小问题，不是大事");
+                        return obj;
                     }
                     return null;
                 });
