@@ -1,6 +1,6 @@
 package com.lcd.pattern.factory.abstracted;
 
-import com.lcd.pattern.model.*;
+import com.lcd.pattern.factory.model.*;
 
 public class MengNiuFactory extends AbstractFactory {
 

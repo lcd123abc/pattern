@@ -8,7 +8,7 @@ public class RegisterSingleton {
 
     public static Object getInstance(String className){
        if(className == null){
-           className = "com.lcd.pattern.model.TeLunSu";
+           className = "com.lcd.pattern.factory.model.TeLunSu";
        }
         synchronized (ioc){
             if (ioc.get(className) == null){

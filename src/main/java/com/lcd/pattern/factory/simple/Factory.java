@@ -1,9 +1,9 @@
 package com.lcd.pattern.factory.simple;
 
-import com.lcd.pattern.model.MengNiu;
-import com.lcd.pattern.model.Mike;
-import com.lcd.pattern.model.TeLunSu;
-import com.lcd.pattern.model.YiLi;
+import com.lcd.pattern.factory.model.MengNiu;
+import com.lcd.pattern.factory.model.Mike;
+import com.lcd.pattern.factory.model.TeLunSu;
+import com.lcd.pattern.factory.model.YiLi;
 
 public class Factory {
     public Mike produceMike(String name){

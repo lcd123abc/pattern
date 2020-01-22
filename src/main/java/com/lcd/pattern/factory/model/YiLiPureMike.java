@@ -1,4 +1,4 @@
-package com.lcd.pattern.model;
+package com.lcd.pattern.factory.model;
 
 public class YiLiPureMike implements PureMike {
     @Override

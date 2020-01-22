@@ -1,9 +1,6 @@
 package com.lcd.pattern.prototype;
 
-import com.lcd.pattern.model.YiLi;
-
-import javax.sound.midi.Soundbank;
-import javax.xml.transform.Source;
+import com.lcd.pattern.factory.model.YiLi;
 
 /**
  * 原型模式在java最常见的实现就是克隆对象
