@@ -1,8 +1,5 @@
-package com.lcd.pattern.proxy.dynamic;
+package com.lcd.pattern.proxy.dynamic.jdk;
 
-import javax.sound.midi.Soundbank;
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 public class DeveloperProxy {

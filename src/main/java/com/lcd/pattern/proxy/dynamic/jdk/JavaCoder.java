@@ -1,4 +1,4 @@
-package com.lcd.pattern.proxy.dynamic;
+package com.lcd.pattern.proxy.dynamic.jdk;
 
 public class JavaCoder implements Developer {
     @Override

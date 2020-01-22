@@ -1,4 +1,4 @@
-package com.lcd.pattern.proxy.dynamic;
+package com.lcd.pattern.proxy.dynamic.jdk;
 
 public class DynamicProxyMain {
     public static void main(String[] args) {
