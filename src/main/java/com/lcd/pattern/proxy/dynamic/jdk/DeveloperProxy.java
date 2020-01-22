@@ -2,6 +2,9 @@ package com.lcd.pattern.proxy.dynamic.jdk;
 
 import java.lang.reflect.Proxy;
 
+/**
+ * 也可以通过实现InvocationHandler接口来实现，其实和下面的写法是一样的
+ */
 public class DeveloperProxy {
 
     public static Developer getProxy(JavaCoder javaCoder){
