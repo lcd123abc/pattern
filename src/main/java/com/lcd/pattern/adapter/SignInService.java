@@ -1,6 +1,7 @@
 package com.lcd.pattern.adapter;
 
-public class SignInService {
+@Deprecated
+public class SignInService implements ISignInService{
     public ResultMsg signIn(String username,String password){
         //注册的逻辑
         //...
