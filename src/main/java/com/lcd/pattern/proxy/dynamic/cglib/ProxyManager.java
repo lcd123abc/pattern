@@ -1,5 +1,6 @@
 package com.lcd.pattern.proxy.dynamic.cglib;
 
+import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
 import java.lang.reflect.Method;
@@ -7,7 +8,7 @@ import java.lang.reflect.Method;
 /**
  * cglib定义方法拦截器
  */
-public class ProxyManager implements MethodInterceptor {
+public class ProxyManager<T> implements MethodInterceptor {
     @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         if(method.getName().equals("deCode")){
@@ -23,5 +24,12 @@ public class ProxyManager implements MethodInterceptor {
             return obj;
         }
         return null;
+    }
+
+    public T getProxy(Class cls){
+        Enhancer enhancer = new Enhancer();
+        enhancer.setSuperclass(cls);
+        enhancer.setCallback(this);
+        return (T)enhancer.create();
     }
 }

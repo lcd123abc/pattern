@@ -5,11 +5,12 @@ import net.sf.cglib.proxy.Enhancer;
 public class CglibProxyMain {
     public static void main(String[] args) {
         //定义Enhancer，配置参数，创建代理对象
-        Enhancer enhancer = new Enhancer();
+        /*Enhancer enhancer = new Enhancer();
         enhancer.setSuperclass(JavaCoder.class);
         enhancer.setCallback(new ProxyManager());
-        JavaCoder proxy = (JavaCoder)enhancer.create();
-
+        JavaCoder proxy = (JavaCoder)enhancer.create();*/
+        ProxyManager<JavaCoder> proxyManager = new ProxyManager();
+        JavaCoder proxy = proxyManager.getProxy(JavaCoder.class);
         proxy.deBug();
         proxy.deCode();
     }
