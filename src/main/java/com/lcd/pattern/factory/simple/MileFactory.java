@@ -5,8 +5,8 @@ import com.lcd.pattern.factory.model.Mike;
 import com.lcd.pattern.factory.model.TeLunSu;
 import com.lcd.pattern.factory.model.YiLi;
 
-public class Factory {
-    public Mike produceMike(String name){
+public class MileFactory {
+    public static Mike produceMike(String name){
         if("蒙牛".equals(name)){
             return new MengNiu();
         }else if ("特仑苏".equals(name)){

@@ -6,10 +6,8 @@ package com.lcd.pattern.factory.simple;
  */
 public class SimpleFactoryMain {
     public static void main(String[] args) {
-
-        Factory factory = new Factory();
-        System.out.println(factory.produceMike("蒙牛").getName());
-        System.out.println(factory.produceMike("伊利").getName());
-        System.out.println(factory.produceMike("特仑苏").getName());
+        System.out.println(MileFactory.produceMike("蒙牛").getName());
+        System.out.println(MileFactory.produceMike("伊利").getName());
+        System.out.println(MileFactory.produceMike("特仑苏").getName());
     }
 }
